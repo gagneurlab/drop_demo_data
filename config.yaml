@@ -1,0 +1,61 @@
+projectTitle: Detection of RNA Outlier Pipeline
+htmlOutputPath: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Output/html
+indexWithFolderName: true
+root: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Output
+sampleAnnotation: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Data/sample_annotation_FA.tsv
+geneAnnotation:
+  v29: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Data/gencode_annotation_trunc.gtf
+genomeAssembly: hg19
+genome: 
+  ucsc: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Data/chr21.fa
+  ncbi: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Data/chr21_ncbi.fa
+hpoFile: null
+random_seed: true
+exportCounts:
+  geneAnnotations:
+  - v29
+  excludeGroups:
+  - mae
+  - import_exp
+aberrantExpression:
+  groups:
+  - outrider
+  - import_exp
+  fpkmCutoff: 1
+  implementation: autoencoder
+  padjCutoff: 1
+  zScoreCutoff: 0
+  maxTestedDimensionProportion: 3
+  dassie:
+    tssWindow: 500
+    pasWindow: 1000
+aberrantSplicing:
+  groups:
+  - fraser
+  recount: true
+  longRead: false
+  keepNonStandardChrs: true
+  filter: false
+  minExpressionInOneSample: 20
+  minDeltaPsi: 0.05
+  implementation: PCA
+  padjCutoff: 1
+  zScoreCutoff: 0
+  deltaPsiCutoff: 0.05
+  maxTestedDimensionProportion: 6
+mae:
+  groups:
+  - mae
+  gatkIgnoreHeaderCheck: true
+  padjCutoff: 0.05
+  allelicRatioCutoff: 0.8
+  addAF: false
+  maxAF: 0.001
+  maxVarFreqCohort: 0.04
+  qcVcf: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Data/qc_vcf_1000G.vcf.gz
+  qcGroups:
+  - mae
+tools:
+  gatkCmd: gatk
+  bcftoolsCmd: bcftools
+  samtoolsCmd: samtools
