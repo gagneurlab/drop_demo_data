@@ -1,14 +1,14 @@
 projectTitle: Detection of RNA Outlier Pipeline
-htmlOutputPath: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Output/html
+htmlOutputPath: demo/Output/html
 indexWithFolderName: true
-root: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Output
-sampleAnnotation: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Data/sample_annotation_FA.tsv
+root: demo/Output
+sampleAnnotation: demo/Data/sample_annotation.tsv
 geneAnnotation:
-  v29: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Data/gencode_annotation_trunc.gtf
+  v29: demo/Data/gencode_annotation_trunc.gtf
 genomeAssembly: hg19
 genome: 
-  ucsc: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Data/chr21.fa
-  ncbi: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Data/chr21_ncbi.fa
+  ucsc: demo/Data/chr21.fa
+  ncbi: demo/Data/chr21_ncbi.fa
 hpoFile: null
 random_seed: true
 exportCounts:
@@ -52,7 +52,7 @@ mae:
   addAF: false
   maxAF: 0.001
   maxVarFreqCohort: 0.04
-  qcVcf: /data/nasif12/home_if12/smith/projects/smith/drop_gagneur_dev/demo/Data/qc_vcf_1000G.vcf.gz
+  qcVcf: demo/Data/qc_vcf_1000G.vcf.gz
   qcGroups:
   - mae
 tools:
