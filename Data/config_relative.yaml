@@ -45,7 +45,8 @@ aberrantSplicing:
   maxTestedDimensionProportion: 6
 mae:
   groups:
-  - mae
+  - UDP
+  - mae_ucsc
   gatkIgnoreHeaderCheck: true
   padjCutoff: 0.05
   allelicRatioCutoff: 0.8
@@ -54,7 +55,8 @@ mae:
   maxVarFreqCohort: 0.04
   qcVcf: Data/qc_vcf_1000G.vcf.gz
   qcGroups:
-  - mae
+  - UDP
+  - mae_ucsc
 tools:
   gatkCmd: gatk
   bcftoolsCmd: bcftools
