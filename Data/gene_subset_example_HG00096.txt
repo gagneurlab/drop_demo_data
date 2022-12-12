@@ -1,0 +1,6 @@
+# Sample_specific_genes
+PIGP
+CFAP410
+TEKT4P2
+MRPS6
+PRMT2
