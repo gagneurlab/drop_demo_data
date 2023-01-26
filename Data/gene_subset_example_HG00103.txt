@@ -1,6 +1,0 @@
-# Sample_specific_genes
-CLIC6
-ATP5PO
-WRB
-ETS2
-HLCS
