@@ -1,4 +1,5 @@
 # DROP demo data
 
-This repository serves to act as the storage for the test data used by the Gagneur Lab's DROP project
+This repository contains the test data used by the Gagneur Lab's 
+Detection of RNA Outliers Pipeline (DROP)
 https://github.com/gagneurlab/drop/
